@@ -3,20 +3,24 @@
 
 This project is a fork of [CRUD Application by singhpriteshh](https://github.com/singhpriteshh/CRUD), which has been extended to include Docker support for easy deployment and containerization.
 
+---
+
 ## Features
 
-- Create, Read, Update, and Delete (CRUD) operations for managing tasks.
+- Perform Create, Read, Update, and Delete (CRUD) operations for managing tasks.
 - Lightweight and efficient application, now containerized using Docker.
 - Easy to set up and deploy with Docker Compose.
 
 ---
 
-### Prerequisites
+## Prerequisites
 
-Before running this application, make sure you have the following installed:
+Before running this application, ensure you have the following installed:
 
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Docker Compose](https://docs.docker.com/compose/)
+
+---
 
 ## Getting Started
 
@@ -48,17 +52,17 @@ docker-compose up -d
 This will:
 
 - Start the application container.
-- Map the necessary ports.
+- Map the necessary ports for access.
 
 ### 4. Access the Application
 
-Once the containers are up, the application will be available at:
+Once the containers are running, you can access the application at:
 
 ```
 http://localhost:3000
 ```
 
-(Replace `3000` with the port configured in your `docker-compose.yml` file if different.)
+> **Note:** Replace `3000` with the port configured in your `docker-compose.yml` file if it's different.
 
 ---
 
@@ -81,18 +85,18 @@ todo-crud-dockerize/
 
 The `Dockerfile` sets up the environment for running the application. Key steps include:
 
-1. Base image selection.
-2. Installation of dependencies.
-3. Copying application code.
+1. Selecting a base image.
+2. Installing necessary dependencies.
+3. Copying the application code into the container.
 4. Exposing ports for external access.
 
 ### `docker-compose.yml`
 
-The `docker-compose.yml` simplifies multi-container orchestration. You can define configurations like:
+The `docker-compose.yml` simplifies multi-container orchestration and allows you to:
 
-- Service definitions.
-- Networking.
-- Volume mapping for data persistence.
+- Define services and their configurations.
+- Set up networking between containers.
+- Configure volume mapping for data persistence.
 
 ---
 
@@ -106,13 +110,13 @@ The `docker-compose.yml` simplifies multi-container orchestration. You can defin
 
 ## Contributing
 
-Feel free to submit pull requests or report issues to improve this project. Contributions are always welcome!
+Contributions are welcome! Feel free to submit pull requests or report issues to improve this project.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the original repository for additional details.
+This project is licensed under the MIT License. Refer to the original repository for more details.
 
 ---
 
@@ -120,5 +124,4 @@ This project is licensed under the MIT License. See the original repository for 
 
 - [CRUD Application by singhpriteshh](https://github.com/singhpriteshh/CRUD) for the original project.
 - Docker community for simplifying application deployment.
-
----
+```
