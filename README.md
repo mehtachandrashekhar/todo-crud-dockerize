@@ -1,5 +1,3 @@
-Here is the README file for your Todo CRUD Application with Docker support:
-
 ```markdown
 # Todo CRUD Application - Dockerized
 
